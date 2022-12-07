@@ -1,0 +1,30 @@
+.noteHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0px;
+  align-items: center;
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.noteHeader .add-button svg {
+  width: 24px;
+  height: auto;
+}
+.noteHeader .add-button {
+  aspect-ratio: 1/1;
+  border: none;
+  background: #ffd66b;
+  color: #fff;
+  cursor: pointer;
+  padding: 0px 10px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.noteHeader .add-button:hover {
+  box-shadow: 0 0 12px rgb(255 214 107 / 80%);
+}

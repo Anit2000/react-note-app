@@ -1,0 +1,49 @@
+.noteBlock button svg {
+  width: 18px;
+  height: auto;
+}
+.noteBlock button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 60px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+.noteBlock button:hover {
+  background: #ffd66b;
+  color: #fff;
+}
+.noteBlock {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
+  min-width: 250px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 8px;
+  max-width: 350px;
+  height: max-content;
+}
+.noteBlock .noteActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  padding: 8px;
+}
+.noteBlock p {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+p.task-done {
+  text-decoration: line-through;
+}
+button.task-done {
+  background: #ffd66b;
+  color: #fff;
+}

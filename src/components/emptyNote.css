@@ -1,0 +1,17 @@
+.empty-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  transform: translateX(-10%);
+}
+.empty-note button {
+  background-color: #ffd66b;
+  color: #fff;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  min-width: 80px;
+}

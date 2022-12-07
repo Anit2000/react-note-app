@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import NoteHeader from "./components/NoteHeader";
+import NoteWrap from "./components/NoteWrap";
+import NoteAdd from "./components/NoteAdd";
+import { useSelector } from "react-redux";
 function App() {
+  const display = useSelector((state) => state.notes.display);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NoteHeader />
+      <NoteWrap />
+      {display && <NoteAdd />}
     </div>
   );
 }

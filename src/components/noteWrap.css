@@ -1,0 +1,7 @@
+.noteWrap {
+  display: flex;
+  max-width: 80vw;
+  margin-left: auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
